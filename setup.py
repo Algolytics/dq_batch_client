@@ -10,7 +10,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'requests == 2.11.1'
+    'requests >= 2.27.1'
 ]
 
 test_requirements = [
@@ -20,10 +20,12 @@ test_requirements = [
 setup(
     name='dq-client',
     version='0.5.0',
+    python_requires='>=3.6',
     description="Python library which allows to use http://dataquality.pl in easy way.",
     long_description=readme + '\n\n' + history,
-    author="Mikołaj Olszewski",
-    author_email='mikolaj.olszewski@algolytics.pl',
+    long_description_content_type='text/x-rst',
+    author="Algolytics Technologies",
+    author_email='info@algolytics.pl',
     url='https://github.com/Algolytics/dq_client',
     packages=[
         'dq',
@@ -40,9 +42,14 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
     ],
     test_suite='tests',
     tests_require=test_requirements
