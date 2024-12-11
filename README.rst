@@ -1,6 +1,6 @@
-===============================
+================================
 Python client for dataquality.pl
-===============================
+================================
 
 
 .. image:: https://img.shields.io/pypi/v/dq_client.svg
@@ -32,7 +32,7 @@ Features
 * Automatic encoding file conversion
 
 Credits
----------
+-------
 
 This package was created by Algolytics_ dev team.
 

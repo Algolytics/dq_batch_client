@@ -79,7 +79,7 @@ Ready to contribute? Here's how to set up `dq-client` for local development.
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
 
     $ flake8 dq tests
-    $ python setup.py test or py.test
+    $ python setup.py test or pytest
     $ tox
 
    To get flake8 and tox, just pip install them into your virtualenv.
@@ -101,8 +101,8 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
-3. The pull request should work for Python 3.3, 3.4 and 3.5, and for PyPy. Check
-   https://travis-ci.org/Algolytics/dq_client/pull_requests
+3. The pull request should work for Python versions 3.6 - 3.13, and for PyPy. Check
+   https://github.com/Algolytics/dq_batch_client/pulls
    and make sure that the tests pass for all supported Python versions.
 
 Tips
@@ -110,5 +110,5 @@ Tips
 
 To run a subset of tests::
 
-$ py.test tests.test_dq_client
+$ pytest tests.test_dq_client
 
