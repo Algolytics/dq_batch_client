@@ -15,7 +15,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/Algolytics/dq_client/issues.
+Report bugs at https://github.com/Algolytics/dq_batch_client/issues.
 
 If you are reporting a bug, please include:
 
@@ -45,7 +45,7 @@ articles, and such.
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/Algolytics/dq_client/issues.
+The best way to send feedback is to file an issue at https://github.com/Algolytics/dq_batch_client/issues.
 
 If you are proposing a feature:
 
@@ -57,17 +57,17 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `dq-client` for local development.
+Ready to contribute? Here's how to set up `dq-batch-client` for local development.
 
-1. Fork the `dq-client` repo on GitHub.
+1. Fork the `dq_batch_client` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/dq_client.git
+    $ git clone git@github.com:your_name_here/dq_batch_client.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv dq_client
-    $ cd dq-client/
+    $ mkvirtualenv dq_batch_client
+    $ cd dq_batch_client/
     $ python setup.py develop
 
 4. Create a branch for local development::
@@ -110,5 +110,5 @@ Tips
 
 To run a subset of tests::
 
-$ pytest tests.test_dq_client
+$ pytest tests.test_dq_batch_client
 

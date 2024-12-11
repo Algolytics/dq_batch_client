@@ -70,7 +70,7 @@ Create new job
     ...
 
 Create new deduplication job
---------------
+----------------------------
 ::
 
 	input_data = '''unikalne_id;imie_i_nazwisko;kod_pocztowy;miejscowosc;adres;email;tel;CrmContactNumber;data

@@ -18,7 +18,7 @@ test_requirements = [
 ]
 
 setup(
-    name='dq-client',
+    name='dq-batch-client',
     version='0.5.0',
     python_requires='>=3.6',
     description="Python library which allows to use http://dataquality.pl in easy way.",
@@ -35,7 +35,7 @@ setup(
     install_requires=requirements,
     license="Apache Software License 2.0",
     zip_safe=False,
-    keywords=['dataquality', 'dq', 'dq-client'],
+    keywords=['dataquality', 'dq', 'dq-batch-client'],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
