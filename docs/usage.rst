@@ -58,7 +58,13 @@ Create new job
     job_config.input_column(0, name='ID', function='PRZEPISZ')
     job_config.input_column(1, name='ADRES', function='DANE_OGOLNE')
     job_config.module_std(address=1)
-    job_config.extend(gus=True, geocode=True)
+    job_config.extend(gus=True,
+                      geocode=True,
+                      teryt=False,
+                      building_info=False,
+                      diagnostic=False,
+                      area_characteristic=False,
+                      financial_scoring=False)
 
     job = dq.submit_job(job_config, input_data=input_data)                                         # with data in a variable
 
