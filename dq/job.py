@@ -50,7 +50,8 @@ class JobConfig:
             "geocode": 0,
             "building_info": 0,
             "diagnostic": 0,
-            "area_characteristic": 0
+            "area_characteristic": 0,
+            "financial_scoring": 0
         }
         self._module_std = {
             "address": 0,
@@ -62,12 +63,12 @@ class JobConfig:
             "name": "",
             "mode": ""
         }
-        
+
         self._deduplication = {
             "on": 0,
             "incremental": 0
-        } 
-	
+        }
+
     def input_format(self, field_separator=",", text_delimiter="\"",
                      code_page="utf-8"):
         self._input_format["field_separator"] = field_separator
@@ -80,29 +81,29 @@ class JobConfig:
 
     def extend(self, teryt=False, gus=False, geocode=False,
                building_info=False, diagnostic=False,
-               area_characteristic=False):
+               area_characteristic=False, financial_scoring=False):
         self._extend["teryt"] = self.__boolean_to_num(teryt)
         self._extend["gus"] = self.__boolean_to_num(gus)
         self._extend["geocode"] = self.__boolean_to_num(geocode)
         self._extend["building_info"] = self.__boolean_to_num(building_info)
         self._extend["diagnostic"] = self.__boolean_to_num(diagnostic)
-        self._extend["area_characteristic"] = \
-            self.__boolean_to_num(area_characteristic)
-	
-    def module_std(self, address = False, names = False, contact = False, id_numbers = False):
+        self._extend["area_characteristic"] = self.__boolean_to_num(area_characteristic)
+        self._extend["financial_scoring"] = self.__boolean_to_num(financial_scoring)
+
+    def module_std(self, address=False, names=False, contact=False, id_numbers=False):
         self._module_std["address"] = self.__boolean_to_num(address)
         self._module_std["names"] = self.__boolean_to_num(names)
         self._module_std["contact"] = self.__boolean_to_num(contact)
         self._module_std["id_numbers"] = self.__boolean_to_num(id_numbers)
-		
-    def deduplication(self, on = False, incremental = False):
+
+    def deduplication(self, on=False, incremental=False):
         self._deduplication["on"] = self.__boolean_to_num(on)
         self._deduplication["incremental"] = self.__boolean_to_num(incremental)
-        
+
     def client(self, name, mode):
         self._client["name"] = name
         self._client["mode"] = mode
-			
+
     @staticmethod
     def __boolean_to_num(value):
         return 1 if value else 0
