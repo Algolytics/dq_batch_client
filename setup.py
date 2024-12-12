@@ -26,7 +26,7 @@ setup(
     long_description_content_type='text/x-rst',
     author="Algolytics Technologies",
     author_email='info@algolytics.pl',
-    url='https://github.com/Algolytics/dq_client',
+    url='https://github.com/Algolytics/dq_batch_client',
     packages=[
         'dq',
     ],
